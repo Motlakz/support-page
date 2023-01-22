@@ -262,7 +262,7 @@ span i{
 .apps {
     border-top: 2px solid rgb(184, 169, 169);
     display: flex;
-    padding-top: 15px;;
+    padding-top: 15px;
     position: relative;
     right: 430px;
     top: 50px;
@@ -328,7 +328,7 @@ button i {
 @media screen and (max-width: 765px) {
     .navbar .logo{
         position: relative;
-        left: 50px;
+        left: 80px;
     }
     .navbar a{
         display: flex;
@@ -338,43 +338,62 @@ button i {
     .fa-bars {
         font-size: 25px;
         display:block;
+        position: relative;
+        left: 40px
     }
-    /*.search-group i {
-        color: rgb(102, 99, 99);
-        left: 15%;
-    }
-    input{
-        padding: 15px;
-        width: 80vw;
-    }
-    ::placeholder {
-        font-size: 17px;
-    }*/
+    
     .header {
-        height: 25vh;
+        height: 40vh;
+        background-position: right;
     }
     .header h1{
         font-size: 20px;
+        position: relative;
+        bottom: 35px;
         text-align: center;
         padding-bottom: 15px;
     }
-    .body {
-        height: 210vh;
+    input {
+        position: relative;
+        bottom: 60px;
+        border: none;
+        padding: 17px;
+        width: 90vw;
     }
+    
     .body p {
         font-size: 17px;
-        width: 80%; 
+        width: 90%; 
     }
-    .body .cards {
+    .body .large-cards {
         flex-direction: column;
         align-items: center;
     }
-    .body .card {
+    .body .large-cards .card {
         margin: 10px;
-        height: 60vh;
-        width: 90%;
+        height: 75vh;
+        width: 90vw;
         border: 2px solid rgb(231, 224, 224);
         box-shadow: none;
+    }
+    .body .large-cards .card img {
+        width: 40px;
+    }
+    .body .large-cards .card h2 {
+        font-size: 22px;
+        padding: 15px 0 15px 0;
+    }
+    .body .large-cards .card p {
+        width: 90%;
+    }
+    .body .large-cards .card li {
+        position: relative;
+        bottom: 32px;
+        padding: 10px 0 15px 0;
+        width: 80%;
+    }
+    .body .large-cards .card li:hover{
+        color: #000;
     }
     .topics .head {
         font-size: 15px;
@@ -397,48 +416,51 @@ button i {
         height: 30px;
         width: 30px;
     }
+    .vid-cards {
+        display: grid
+    }
     .top-footer {
-        
         display: grid;
-        text-align: center;
-        align-items: center;
-        padding: 20px;
-        justify-content: center;
+        height: 45vh;
     }
     .top-footer span a{
+        border-bottom: 1px solid rgb(230, 223, 223);
         text-decoration: none;
     }
-
-    .top-footer span {
-        padding: 10px;
-        width: 50vw;
-        border-bottom: 1px solid rgb(230, 223, 223);
+    .top-footer .content {
+        width: 220px;
+    }
+    .top-footer .content span { 
+        position: relative;  
+        left: 50px;
+        bottom: 35px;
+        font-size: 15px;
+        text-align: left;
+        width: 100%;
+    }
+    .two {
+        color:rgb(56, 53, 53)
     }
     .bottom-footer {
-
-        display: block;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .bottom-footer .logo {
-        border-bottom: none;
-    }
-    .bottom-footer h4 {
-        padding: 15px;
-    }
-    .bottom-footer li {
-        border-bottom: 2px solid rgb(245, 241, 241);
-        padding: 20px;
-    }
-    .bottom-footer li a {
-        font-family: 'monospace';
-        font-size: 12px;
-        font-weight: 500;
-        letter-spacing: 0.013rem;
+        display: grid
     }
     .links {
-        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 180px;  
+    }
+    .links .list{
+        font-size: 25px;
+        position: relative;
+        right: 180px;
+        text-align: center;
+        width: 60vw;
+    }
+    button {
+        bottom: 1%;
+        width: 20vw;
     }
 }
 
